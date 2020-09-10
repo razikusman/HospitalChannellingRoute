@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: #eee;
+    color:#666;
+}
 
 .color{
     background-color: rgb(4, 49, 4); 
-    
+    color: black;
 }
+
 img{
     height: 3%;
     width: 3%;
