@@ -1,0 +1,17 @@
+.color{
+    background-color: rgb(4, 49, 4); 
+    
+}
+img{
+    height: 3%;
+    width: 3%;
+}
+
+a{
+    font-weight: bolder;
+    color: white;
+}
+a:hover{
+    font-weight: bolder;
+    color: rgb(173, 4, 4);
+}

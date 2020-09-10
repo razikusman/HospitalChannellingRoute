@@ -54,3 +54,17 @@ body{
 .btn-custom:focus{
   box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
 }
+
+.color{
+  background-color: rgb(4, 49, 4); 
+  
+}
+
+a{
+  font-weight: bolder;
+  color: white;
+}
+a:hover{
+  font-weight: bolder;
+  color: rgb(173, 4, 4);
+}
