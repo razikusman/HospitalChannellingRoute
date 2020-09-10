@@ -25,23 +25,23 @@
           <!-- nav bar start -->
           <ul class="navbar-nav my-2 my-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sign Up
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Admin</a>
-                <a class="dropdown-item" href="#">Doctor</a>
-                <a class="dropdown-item" href="#">Patient</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../Login/login.html">Login</a>
-              </div>
+            <li>
+                <a class="nav-link" href="../Login/login.html">Login</a>
             </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sign Up
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Admin</a>
+                    <a class="dropdown-item" href="#">Doctor</a>
+                    <a class="dropdown-item" href="#">Patient</a>
+              </li>
           </ul>
           <!-- nav bar end -->
         </div>
@@ -49,7 +49,7 @@
 
     <div class="d-flex justify-content-center align-items-center login-container">
         <form class="login-form text-center">
-            <img src="../images/red_logo.png" alt="Avatar" style="height: 200px;">
+            <img class="logo" src="../images/red_logo.png" alt="Avatar" style="height: 200px;">
             <h1 class="mb-5 font-weight-light text-uppercase">Register</h1>
             <div class="form-group">
                 <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Username">
@@ -65,7 +65,7 @@
                 <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirm-Password">
             </div>
             <div class="form-group">
-                <input type="number" class="form-control rounded-pill form-control-lg" placeholder="Mobile">
+                <input type="tel" class="form-control rounded-pill form-control-lg" placeholder="Mobile">
             </div>
            
             <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Log in</button>
