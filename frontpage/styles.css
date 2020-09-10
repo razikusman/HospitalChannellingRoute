@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+.color{
+    background-color: rgb(4, 49, 4); 
+    
+}
+img{
+    height: 3%;
+    width: 3%;
+}
+
+a{
+    font-weight: bolder;
+    color: white;
+}
+a:hover{
+    font-weight: bolder;
+    color: rgb(148, 8, 8);
+}
