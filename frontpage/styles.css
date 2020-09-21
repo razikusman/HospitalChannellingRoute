@@ -1,0 +1,25 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: #eee;
+    color:#666;
+}
+
+.color{
+    background-color: rgb(4, 49, 4); 
+    color: black;
+}
+
+img{
+    height: 3%;
+    width: 3%;
+}
+
+a{
+    font-weight: bolder;
+    color: white;
+}
+a:hover{
+    font-weight: bolder;
+    color: rgb(148, 8, 8);
+}

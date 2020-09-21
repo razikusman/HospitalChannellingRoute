@@ -278,32 +278,37 @@ width: 500px;
               <!-- form start -->
               <form role="form">
                 <div class="card-body">
-                  <h4>Admit Patient:</h4>
+                  <h4>Discharge Patient:</h4>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Admission No</label>
+                    <label for="exampleInputPassword1">Enter Admission No.</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Doctor Registration No" >
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Admission No</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Admission No" disabled>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Patient Reg No</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Patient Name">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Reg No" disabled>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Patient Name</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Patient Name">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Patient Name" disabled>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Select Appointment No.(if any)</label><br>
-                     <input type="radio" id="male" name="gender" value="male">
-                     <label for="male">APP</label>
-                     <input type="radio" id="female" name="gender" value="female">
-                     <label for="female">eAPP</label><br>
+                    <label for="exampleInputPassword1">Select Appointment No.(if any)</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Appointment No." disabled>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Date of Admission</label>
-                    <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Date">
+                    <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Date" disabled>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Select Room</label>
-                    <select name="example1_length" aria-controls="example1" class="custom-select custom-select-sm form-control form-control-sm">
+                    <select name="example1_length" aria-controls="example1" class="custom-select custom-select-sm form-control form-control-sm" disabled>
                         <option value="10">xxx</option>
                         <option value="25">eee</option>
                         <option value="50">www</option>
@@ -312,14 +317,14 @@ width: 500px;
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Cause of Admission</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Cause">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Cause" disabled>
                   </div>
                   
                  
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Admit Patient</button>
+                    <button type="submit" class="btn btn-primary">Discharge Patient</button>
                   </div>             
                  </form>
             </div>
@@ -353,13 +358,15 @@ width: 500px;
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-15">
                                             <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
                                 <thead>
                                 <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 203.4px;">Room No</th>
-                                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 262.6px;">Room Type</th>
-                                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 233px;">Availability</th>
+                                    <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 203.4px;">Addmission No</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 262.6px;">Room No</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 233px;">Room Type</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 233px;">Patient No</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 233px;">Addmitted On</th>
                                 </tr>
                                 </thead>
                            
