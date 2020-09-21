@@ -10,9 +10,11 @@ body{
   width: 100%;
 }
 
+
+
 .login-form{
   margin: auto;
-  width: 370px;
+  width: 80%;
   padding: 15px;
   max-width: 100%;
 }
