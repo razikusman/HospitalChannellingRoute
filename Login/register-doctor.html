@@ -43,8 +43,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Admin</a>
-            <a class="dropdown-item" href="#">Doctor</a>
-            <a class="dropdown-item" href="#">Patient</a>
+            <a class="dropdown-item" href="../Login/register-doctor.html">Doctor</a>
+            <a class="dropdown-item" href="../Login/register-user.html">Patient</a>
         </li>
       </ul>
     </div>
@@ -68,20 +68,36 @@
                   </div>
                 </div><br>
                 <div class="row">
-                  <div class="form-group col-md-6">
-                    <label for="exampleInputPassword1">Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label><br>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="exampleInputPassword1">Marital Status</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="radio" id="married" name="m_state" value="married">
-                    <label for="male">Married</label>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="radio" id="single" name="m_state" value="single">
-                    <label for="female">Single</label><br>
-                  </div>
+                    <div class="form-group col-md-6">
+                        <div class="row">
+                          
+                          <label for="exampleInputPassword1" class="col-md-4">Gender</label>
+                          <div class="col-md-4">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                          </div>
+                          <div class="col-md-4">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="form-group col-md-6">
+                        <div class="row">
+                          
+                          <label for="exampleInputPassword1" class="col-md-4">Marital Status</label>
+                          <div class="col-md-4">
+                            <input type="radio" id="married" name="m_status" value="married">
+                            <label for="married">Married</label>
+                          </div>
+                          <div class="col-md-4">
+                            <input type="radio" id="single" name="m_status" value="single">
+                            <label for="single">Single</label>
+                          </div>
+                        </div>
+                        
+                      </div>
 
                 </div>
                
@@ -121,7 +137,7 @@
                    <input type="tel" class="form-control rounded-pill form-control-lg" placeholder="Mobile" required>
                  </div>
                   <div class="form-group col-md-6">
-                    <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Medical Register Number" required>
+                    <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Medical Registration Number" required>
                  </div>
               </div>
               
