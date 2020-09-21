@@ -66,11 +66,11 @@ body{
 
 .color{
   background-color: rgb(4, 49, 4);
-  color: black;
+  color: white;
   
 }
 
-a{
+.navbar-light .navbar-brand,.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link{
   font-weight: bolder;
   color: white;
 }
