@@ -11,8 +11,8 @@
     </head>
 
     <!-- nav bar start -->
-    <nav style ="height: 3%; width: 3%;" class="navbar navbar-expand-lg color">
-    <img  href="../frontpage/frontpage.html" src="../images/red_logo.png">
+    <nav class="navbar navbar-expand-lg color">
+    <img  href="../frontpage/frontpage.html" src="../images/red_logo.png" alt="Avatar" style="height: 40px;">
     <a class="navbar-brand" href="../frontpage/frontpage.html">Doctor Chaneling</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -51,31 +51,162 @@
     <body class="relative">
     
 
-        <div class="d-flex justify-content-center align-items-center login-container">
-            <form class="login-form text-center">
+        <div class="login-container">
+            <form class="login-form text-center" >
                 <img class="logo" src="../images/red_logo.png" alt="Avatar" style="height: 200px;">
-                <h1 class="mb-5 font-weight-light text-uppercase">Register</h1>
-                <div class="form-group">
-                    <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Username">
+                <h1 class="mb-5 font-weight-light text-uppercase">Register Patient</h1>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control rounded-pill form-control-lg" placeholder="First Name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Last Name"required>
+                  </div>
+                </div><br>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Marital Status</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="married" name="m_state" value="married">
+                    <label for="male">Married</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="single" name="m_state" value="single">
+                    <label for="female">Single</label><br>
+                  </div>
+
                 </div>
-                <div class="form-group">
-                    <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Email">
-                </div>
-                
-                <div class="form-group">
-                    <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirm-Password">
-                </div>
-                <div class="form-group">
-                    <input type="tel" class="form-control rounded-pill form-control-lg" placeholder="Mobile">
-                </div>
+               
             
-                <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Log in</button>
-                <p class="mt-3 font-weight-normal">Don't have an account? <a href="#"><strong>Register Now</strong></a></p>
+                <div class="form-group">
+                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Address" required>
+                </div> 
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <select class="form-control rounded-pill form-control-lg" placeholder="Choose Your District" required>
+                      <option value="Colombo" selected>Colombo</option>
+                      <option value="Gampaha">Gampaha</option>
+                      <option value="Kaluthara">Kaluthara</option>
+                      <option value="Kandy">Kandy</option>
+                      <option value="Matale">Matale</option>
+                      <option value="Nuwara-Eliya">Nuwara-Eliya</option>
+                      <option value="Galle">Galle</option>
+                      <option value="Matara">Matara</option>
+                      <option value="Hambanthota">Hambanthota</option>
+                      <option value="Jaffna">Jaffna</option>
+                      <option value="Mannar">Mannar</option>
+                      <option value="Vauniya">Vauniya</option>
+                      <option value="Mulathivu">Mulathivu</option>
+                      <option value="Kilinochchi">Kilinochchi</option>
+                      <option value="Batticaloa">Batticaloa</option>
+                      <option value="Ampara">Ampara</option>
+                      <option value="Trincomalee">Trincomalee</option>
+                      <option value="Kurunagala">Kurunagala</option>
+                      <option value="Puttalam">Puttalam</option>
+                      <option value="Anuradhapura">Anuradhapura</option>
+                      <option value="Polonnaruwa">Polonnaruwa</option>
+                      <option value="Badulla">Badulla</option>
+                      <option value="Monaragala">Monaragala</option>
+                      <option value="Rathnapura">Rathnapura</option>
+                      <option value="Kegalle">Kegalle</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="NIC" required>
+                </div>
+              </div>
+                
+              
+                <div class="form-group">
+                    <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Email" required>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Password" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirm-Password" required>
+                </div>
+                </div>
+               <div class="row">
+                  <div class="form-group col-md-6">
+                   <input type="tel" class="form-control rounded-pill form-control-lg" placeholder="Mobile" required>
+                 </div>
+                  <div class="form-group col-md-6">
+                  <select class="form-control rounded-pill form-control-lg" placeholder="Choose Your Blood Group" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+" selected>O+</option>
+                    <option value="O-">O-</option>
+                  </select>
+                 </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <select class="form-control rounded-pill form-control-lg" placeholder="Choose Your Guardian Type" required>
+                    <option value="Parent">Parent</option>
+                    <option value="Guardian">Guardian</option>
+                    <option value="Relation">Relation</option>
+                    <option value="Neighbour">Neighbour</option>  
+                  </select>
+                 </div>
+                 <div class="form-group col-md-6">
+                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's  Name" required>
+                 </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's Mobile Number" required>
+                 </div>
+                 <div class="form-group col-md-6">
+                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's Email">
+                 </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's Address">
+               </div>
+                
+            
+                <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Register</button>
+                
             </form>
-        </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+           <!-- Footer -->
+    <footer class="page-footer font-small color relative">
+
+      <!-- Footer Elements -->
+      <div class="container text-cente">
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+          </li>
+          <!-- <li class="list-inline-item">
+            <a href="#!" class="btn btn-outline-danger btn-rounded">Sign up!</a>
+          </li> -->
+          <br>
+          <li class="list-inline-item">
+            <h5 class="mb-1">© 2020 Copyright:</h5>
+          </li>
+          <!-- <li class="list-inline-item">
+            <a href="#!" class="btn btn-outline-danger btn-rounded">MDBootstrap.co</a>
+          </li> -->
+        </ul>
+        <!-- Call to action -->
+      </div>
+      <!-- Footer Elements -->
+
+  </footer>
+  <!-- Footer -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>

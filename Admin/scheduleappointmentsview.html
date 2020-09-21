@@ -76,8 +76,8 @@
                   Brad Diesel
                   <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
                 </h3>
-                <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                <p class="text-sm"></p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i></p>
               </div>
             </div>
             <!-- Message End -->
@@ -93,7 +93,7 @@
                   <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
                 </h3>
                 <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i></p>
               </div>
             </div>
             <!-- Message End -->
@@ -238,7 +238,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Patient Addmissions</h1>
+            <h1>Schedule Appointments</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -251,130 +251,56 @@
     </section>
 
     <!-- Main content -->
-    <style>
-      #f1{
-width: 700px;
-      }
-      #f2{
-width: 500px;
-      }
-    </style>
+    
     <div class="">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="patientaddmi.html">Admit Patient</a></li>
-        <li class="breadcrumb-item"><a href="patientaddmiDischarge.html"> Discharge Patients</a></li>
-        <li class="breadcrumb-item"><a href="patientaddmiHistory.html"> View Patient Admission History</a></li>
+        <li class="breadcrumb-item"><a href="scheduleappointments.html">Make Appointments</a></li>
+        <li class="breadcrumb-item"><a href="scheduleappointmentsview.html"> Sheduled Appointments</a></li>
       </ol>
     </div>
-    <section id="f1" class="content" style="float: left;">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- left column -->
-          <div class="col-md-11">
-            <!-- general form elements -->
-            <div class="card card-primary">
-              
-              <!-- /.card-header -->
-              <!-- form start -->
-              <form role="form">
-                <div class="card-body">
-                  <h4>Admit Patient:</h4>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Admission No</label>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Patient Reg No</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Patient Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Patient Name</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Patient Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Select Appointment No.(if any)</label><br>
-                     <input type="radio" id="male" name="gender" value="male">
-                     <label for="male">APP</label>
-                     <input type="radio" id="female" name="gender" value="female">
-                     <label for="female">eAPP</label><br>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Date of Admission</label>
-                    <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Date">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Select Room</label>
-                    <select name="example1_length" aria-controls="example1" class="custom-select custom-select-sm form-control form-control-sm">
-                        <option value="10">xxx</option>
-                        <option value="25">eee</option>
-                        <option value="50">www</option>
-                        <option value="100">ttt</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Cause of Admission</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Cause">
-                  </div>
-                  
-                 
-                </div>
-                <!-- /.card-body -->
-                <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Admit Patient</button>
-                  </div>             
-                 </form>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section>
-
-            <section class="content" style="float:right;" id="f2">
-              <div class="container-fluid>
-                <div class="row">
-                  <!-- left column -->
-                  <div class="col-md-15">
-                    <!-- general form elements -->
-                    <div class="card card-primary">
-                      
-                      <!-- /.card-header -->
-                      <!-- form start -->
-                      <form role="form">
-                        <div class="card-body">
-                          <h4>Room Availability:</h4>
-                          
-                          <div class="card">
+    <section id="f1" class="content" >
+        <div class="container-fluid">
+          <div class="row">
+            <!-- left column -->
+            <div class="col-md-11">
+              <!-- general form elements -->
+              <div class="card card-primary">
+                
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form role="form">
+                  <div class="card-body">
+                    <h4>Find Appointment(s):</h4>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Select Doctor</label>
+                        <select name="example1_length" aria-controls="example1" class="custom-select custom-select-sm form-control form-control-sm">
+                            <option value="10">xxx</option>
+                            <option value="25">eee</option>
+                            <option value="50">www</option>
+                            <option value="100">ttt</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Select Date</label>
+                        <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Date">
+                      </div>
                     
-                            <!-- /.card-header -->
-                            <div class="card-body">
-                              <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                                  <div class="row"><div class="col-sm-12 col-md-6">
-                                      <div class="dataTables_length" id="example1_length">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
-                                <thead>
-                                <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 203.4px;">Room No</th>
-                                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 262.6px;">Room Type</th>
-                                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 233px;">Availability</th>
-                                </tr>
-                                </thead>
-                           
-                          </div>
-                      </form>
-    
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    </section>
-                    </div>
-            <!-- /.card -->
-
+                        
+                  
+                  <!-- /.card -->
+        
+                  
+                  <!-- /.card-body -->
   
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Find</button>
+                  </div>
+                </form>
+              </div>
+              </div>
+              </div>
+              </div>
+              </section>
          
 
  
