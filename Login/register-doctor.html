@@ -43,8 +43,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Admin</a>
-            <a class="dropdown-item" href="../Login/register-doctor.html">Doctor</a>
-            <a class="dropdown-item" href="../Login/register-user.html">Patient</a>
+            <a class="dropdown-item" href="#">Doctor</a>
+            <a class="dropdown-item" href="#">Patient</a>
         </li>
       </ul>
     </div>
@@ -58,7 +58,7 @@
         <div class="login-container">
             <form class="login-form text-center" >
                 <img class="logo" src="../images/red_logo.png" alt="Avatar" style="height: 200px;">
-                <h1 class="mb-5 font-weight-light text-uppercase">Register Patient</h1>
+                <h1 class="mb-5 font-weight-light text-uppercase">Register Doctor</h1>
                 <div class="row">
                   <div class="form-group col-md-6">
                     <input type="text" class="form-control rounded-pill form-control-lg" placeholder="First Name" required>
@@ -91,33 +91,13 @@
                 </div> 
                 <div class="row">
                   <div class="form-group col-md-6">
-                    <select class="form-control rounded-pill form-control-lg" placeholder="Choose Your District" required>
-                      <option value="Colombo" selected>Colombo</option>
-                      <option value="Gampaha">Gampaha</option>
-                      <option value="Kaluthara">Kaluthara</option>
-                      <option value="Kandy">Kandy</option>
-                      <option value="Matale">Matale</option>
-                      <option value="Nuwara-Eliya">Nuwara-Eliya</option>
-                      <option value="Galle">Galle</option>
-                      <option value="Matara">Matara</option>
-                      <option value="Hambanthota">Hambanthota</option>
-                      <option value="Jaffna">Jaffna</option>
-                      <option value="Mannar">Mannar</option>
-                      <option value="Vauniya">Vauniya</option>
-                      <option value="Mulathivu">Mulathivu</option>
-                      <option value="Kilinochchi">Kilinochchi</option>
-                      <option value="Batticaloa">Batticaloa</option>
-                      <option value="Ampara">Ampara</option>
-                      <option value="Trincomalee">Trincomalee</option>
-                      <option value="Kurunagala">Kurunagala</option>
-                      <option value="Puttalam">Puttalam</option>
-                      <option value="Anuradhapura">Anuradhapura</option>
-                      <option value="Polonnaruwa">Polonnaruwa</option>
-                      <option value="Badulla">Badulla</option>
-                      <option value="Monaragala">Monaragala</option>
-                      <option value="Rathnapura">Rathnapura</option>
-                      <option value="Kegalle">Kegalle</option>
-                  </select>
+                    <select class="form-control rounded-pill form-control-lg" placeholder="Choose Specialiation Area" required>
+                      <option value="Cardiologist" selected>Cardiologist</option>
+                      <option value="Neurologist">Neurologist</option>
+                      <option value="VOG">VOG</option>
+                      <option value="Dental">Dental</option>
+                     </select>
+                    
                 </div>
                 <div class="form-group col-md-6">
                   <input type="text" class="form-control rounded-pill form-control-lg" placeholder="NIC" required>
@@ -141,44 +121,10 @@
                    <input type="tel" class="form-control rounded-pill form-control-lg" placeholder="Mobile" required>
                  </div>
                   <div class="form-group col-md-6">
-                  <select class="form-control rounded-pill form-control-lg" placeholder="Choose Your Blood Group" required>
-                    <option value="A+">A+</option>
-                    <option value="A-">A-</option>
-                    <option value="B+">B+</option>
-                    <option value="B-">B-</option>
-                    <option value="AB+">AB+</option>
-                    <option value="AB-">AB-</option>
-                    <option value="O+" selected>O+</option>
-                    <option value="O-">O-</option>
-                  </select>
+                    <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Medical Register Number" required>
                  </div>
               </div>
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <select class="form-control rounded-pill form-control-lg" placeholder="Choose Your Guardian Type" required>
-                    <option value="Parent">Parent</option>
-                    <option value="Guardian">Guardian</option>
-                    <option value="Relation">Relation</option>
-                    <option value="Neighbour">Neighbour</option>  
-                  </select>
-                 </div>
-                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's  Name" required>
-                 </div>
-              </div>
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's Mobile Number" required>
-                 </div>
-                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's Email">
-                 </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's Address">
-               </div>
-                
-            
+              
                 <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Register</button>
                 
             </form>
