@@ -12,9 +12,16 @@ body{
 
 
 
-.login-form{
+.reg-form{
   margin: auto;
   width: 80%;
+  padding: 15px;
+  max-width: 100%;
+}
+
+.login-form{
+  margin: auto;
+  width: 20%;
   padding: 15px;
   max-width: 100%;
 }
