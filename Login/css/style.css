@@ -7,15 +7,21 @@ body{
 }
 
 .login-container{
-  height: 100vh;
   width: 100%;
 }
 
 
 
-.login-form{
+.reg-form{
   margin: auto;
   width: 80%;
+  padding: 15px;
+  max-width: 100%;
+}
+
+.login-form{
+  margin: auto;
+  width: 20%;
   padding: 15px;
   max-width: 100%;
 }
@@ -72,7 +78,7 @@ body{
   
 }
 
-.navbar-light .navbar-brand,.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link{
+a, .navbar-light .navbar-brand,.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link{
   font-weight: bolder;
   color: white;
 }
@@ -88,4 +94,13 @@ a{
 hr{
   background-color: rgb(160, 2, 2);
   width: 100px;
+  color: red;
+}
+
+hr{
+  width: 100px; 
+  background-color: red;
+}
+.footer-copyright{
+  background-color:rgba(0, 0, 0, 0.267);
 }

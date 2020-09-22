@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>User Register</title>
+    </head>
+
+    <!-- nav bar start -->
+    <nav class="navbar navbar-expand-lg navbar-light color">
+      <img class="img" style ="height: 3%; width: 3%;" href="../frontpage/frontpage.html" src="../images/red_logo.png">
+      <a class="navbar-brand" href="../frontpage/frontpage.html">Doctor Chaneling</a>
+      
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        
+      </ul>
+      
+      <ul class="navbar-nav my-2 my-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="../frontpage/frontpage.html" >Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="../frontpage/about.html">About</a>
+        </li>
+        <li>
+          <a class="nav-link" href="../Login/login.html">Login</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sign Up
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../Login/register-hospital.html">Admin</a>
+            <a class="dropdown-item" href="../Login/register-doctor.html">Doctor</a>
+            <a class="dropdown-item" href="../Login/register-user.html">Patient</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+    <!-- nav bar end -->
+
+    <!-- body start -->
+    <body class="relative">
+    
+
+        <div class="login-container">
+            <form class="reg-form text-center" >
+                <img class="logo" src="../images/red_logo.png" alt="Avatar" style="height: 200px;">
+                <h1 class="mb-5 font-weight-light text-uppercase">Register Doctor</h1>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control rounded-pill form-control-lg" placeholder="First Name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Last Name"required>
+                  </div>
+                </div><br>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <div class="row">
+                          
+                          <label for="exampleInputPassword1" class="col-md-4">Gender</label>
+                          <div class="col-md-4">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                          </div>
+                          <div class="col-md-4">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="form-group col-md-6">
+                        <div class="row">
+                          
+                          <label for="exampleInputPassword1" class="col-md-4">Marital Status</label>
+                          <div class="col-md-4">
+                            <input type="radio" id="married" name="m_status" value="married">
+                            <label for="married">Married</label>
+                          </div>
+                          <div class="col-md-4">
+                            <input type="radio" id="single" name="m_status" value="single">
+                            <label for="single">Single</label>
+                          </div>
+                        </div>
+                        
+                      </div>
+
+                </div>
+               
+            
+                <div class="form-group">
+                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Address" required>
+                </div> 
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <select class="form-control rounded-pill form-control-lg" placeholder="Choose Specialiation Area" required>
+                      <option value="Cardiologist" selected>Cardiologist</option>
+                      <option value="Neurologist">Neurologist</option>
+                      <option value="VOG">VOG</option>
+                      <option value="Dental">Dental</option>
+                     </select>
+                    
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="NIC" required>
+                </div>
+              </div>
+                
+              
+                <div class="form-group">
+                    <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Email" required>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Password" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirm-Password" required>
+                </div>
+                </div>
+               <div class="row">
+                  <div class="form-group col-md-6">
+                   <input type="tel" class="form-control rounded-pill form-control-lg" placeholder="Mobile" required>
+                 </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Medical Registration Number" required>
+                 </div>
+              </div>
+              
+                <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Register</button>
+                
+            </form>
+        </div>
+      
+         
+    
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </body>
+    <!-- body end -->
+   <!-- Footer -->
+  <footer class="page-footer font-small color relative">
+
+    <div style="background-color: red;">
+      <div class="container">
+  
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+  
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row-->
+  
+      </div>
+    </div>
+  
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+  
+      <!-- Grid row -->
+      <div class="row mt-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Doctor Chaneling</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>The content or descriptio about the organization</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Menu</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="../frontpage/frontpage.html">Home</a>
+          </p>
+          <p>
+            <a href="../frontpage/about.html">About</a>
+          </p>
+          <p>
+            <a href="../Login/login.html">Login</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">User Sign-Up as </h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="../Login/register-user.html">Admin</a>
+          </p>
+          <p>
+            <a href="../Login/register-user.html">Doctor</a>
+          </p>
+          <p>
+            <a href="../Login/register-user.html">Patient</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> Address</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> E-mail</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> Contact 1</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> Contact 2</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="../frontpage/frontpage.html"> Doctor Chaneling</a>
+    </div>
+    <!-- Copyright -->
+  
+    </footer>
+    <!-- Footer -->
+</html>

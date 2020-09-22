@@ -128,24 +128,34 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: rgb(4, 49, 4);">
     <!-- Brand Logo -->
-    <a href="https://adminlte.io/themes/dev/AdminLTE/index3.html" class="brand-link">
-      <img src="./dashboard/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Admin</span>
-    </a>
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="brand-image" style="text-align: center;">
 
-    <!-- Sidebar -->
-   <!--   <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-     <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="./da/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="https://adminlte.io/themes/dev/AdminLTE/index.html#" class="d-block">Alexander Pierce</a>
-        </div>
+          <img src="./dashboard/red_logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"    id="logo">
+        
       </div>
+        <div class="user-panel mt-3 pb-3 mb-3" style="text-align: center;">
+          <a class="brand-image ">
+            <img src="./dashboard/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8" >
+            <span class="brand-text font-weight-light" id="adlogo">Admin</span>
+          </a>
+        </div>
+    <style>
+      #logo{
+        height: 100px;
+        width: 100px;
+      }
+      #adlogo{
+        font-size: 25px;
+        font-style: italic;
+      }
+      
+    </style>
+
+    
 
 
       <!-- Sidebar Menu -->
