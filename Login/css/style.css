@@ -85,7 +85,7 @@ a, .navbar-light .navbar-brand,.navbar-light .navbar-nav .nav-link, .navbar-ligh
 
 a:hover{
   font-weight: bolder;
-  color: rgb(rgb(160, 2, 2));
+  color: rgb(160, 2, 2);
 }
 
 a{
@@ -94,12 +94,6 @@ a{
 hr{
   background-color: rgb(160, 2, 2);
   width: 100px;
-  color: red;
-}
-
-hr{
-  width: 100px; 
-  background-color: red;
 }
 .footer-copyright{
   background-color:rgba(0, 0, 0, 0.267);

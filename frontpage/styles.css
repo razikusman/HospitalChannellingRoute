@@ -87,12 +87,6 @@ a{
 hr{
   background-color: rgb(160, 2, 2);
   width: 100px;
-  color: red;
-}
-
-hr{
-  width: 100px; 
-  background-color: red;
 }
 
 .footer-copyright{
