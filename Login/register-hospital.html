@@ -23,32 +23,30 @@
       </button>
     
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <div class="d-flex align-items-end flex-column">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          
-        </ul>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         
-        <ul class="navbar-nav my-2 my-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="../frontpage/frontpage.html" >Home <span class="sr-only">(current)</span></a>
-          <li class="nav-item">
-            <a class="nav-link" href="../frontpage/about.html">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="../Login/login.html">Login</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Sign Up
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../Login/register-hospital.html">Admin</a>
-              <a class="dropdown-item" href="../Login/register-doctor.html">Doctor</a>
-              <a class="dropdown-item" href="../Login/register-user.html">Patient</a>
-          </li>
-        </ul>
-      </div>
+      </ul>
+      
+      <ul class="navbar-nav my-2 my-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="../frontpage/frontpage.html" >Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="../frontpage/about.html">About</a>
+        </li>
+        <li>
+          <a class="nav-link" href="../Login/login.html">Login</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sign Up
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../Login/register-hospital.html">Admin</a>
+            <a class="dropdown-item" href="../Login/register-doctor.html">Doctor</a>
+            <a class="dropdown-item" href="../Login/register-user.html">Patient</a>
+        </li>
+      </ul>
     </div>
     </nav>
     <!-- nav bar end -->
@@ -60,56 +58,21 @@
         <div class="login-container">
             <form class="login-form text-center" >
                 <img class="logo" src="../images/red_logo.png" alt="Avatar" style="height: 200px;">
-                <h1 class="mb-5 font-weight-light text-uppercase">Register Patient</h1>
+                <h1 class="mb-5 font-weight-light text-uppercase">Register Hospital</h1>
                 <div class="row">
                   <div class="form-group col-md-6">
-                    <input type="text" class="form-control rounded-pill form-control-lg" placeholder="First Name" required>
+                    <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Hospital Name" required>
                   </div>
                   <div class="form-group col-md-6">
-                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Last Name"required>
+                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Hospital Registration Number"required>
                   </div>
                 </div><br>
-                <div class="row">
-                  <div class="form-group col-md-6">
-                    <div class="row">
-                      
-                      <label for="exampleInputPassword1" class="col-md-4">Gender</label>
-                      <div class="col-md-4">
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label>
-                      </div>
-                      <div class="col-md-4">
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
-                      </div>
-                    </div>
-                    
-                  </div>
-                  <div class="form-group col-md-6">
-                    <div class="row">
-                      
-                      <label for="exampleInputPassword1" class="col-md-4">Marital Status</label>
-                      <div class="col-md-4">
-                        <input type="radio" id="married" name="m_status" value="married">
-                        <label for="married">Married</label>
-                      </div>
-                      <div class="col-md-4">
-                        <input type="radio" id="single" name="m_status" value="single">
-                        <label for="single">Single</label>
-                      </div>
-                    </div>
-                    
-                  </div>
-
-                </div>
-               
-            
+                
                 <div class="form-group">
                   <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Address" required>
                 </div> 
-                <div class="row">
-                  <div class="form-group col-md-6">
-                    <select class="form-control rounded-pill form-control-lg" placeholder="Choose Your District" required>
+                <div class="form-group">
+                    <select class="form-control rounded-pill form-control-lg" placeholder="Choose the District" required>
                       <option value="Colombo" selected>Colombo</option>
                       <option value="Gampaha">Gampaha</option>
                       <option value="Kaluthara">Kaluthara</option>
@@ -137,66 +100,34 @@
                       <option value="Kegalle">Kegalle</option>
                   </select>
                 </div>
+               <div class="row">  
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="NIC" required>
+                  <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Email" required>
                 </div>
-              </div>
-                
-              
-                <div class="form-group">
-                    <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Email" required>
-                </div>
+                <div class="form-group col-md-6">
+                    <input type="number" class="form-control rounded-pill form-control-lg" placeholder="Telephone" required>
+                  </div>
+               </div>
                 <div class="row">
                   <div class="form-group col-md-6">
                     <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Password" required>
-                </div>
-                <div class="form-group col-md-6">
+                  </div>
+                  <div class="form-group col-md-6">
                     <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirm-Password" required>
+                  </div>
                 </div>
+                <div class="form-group">
+                    <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Owner's Name" required>
                 </div>
                <div class="row">
                   <div class="form-group col-md-6">
-                   <input type="tel" class="form-control rounded-pill form-control-lg" placeholder="Mobile" required>
-                 </div>
+                   <input type="tel" class="form-control rounded-pill form-control-lg" placeholder="Owner's Mobile" required>
+                  </div>
                   <div class="form-group col-md-6">
-                  <select class="form-control rounded-pill form-control-lg" placeholder="Choose Your Blood Group" required>
-                    <option value="A+">A+</option>
-                    <option value="A-">A-</option>
-                    <option value="B+">B+</option>
-                    <option value="B-">B-</option>
-                    <option value="AB+">AB+</option>
-                    <option value="AB-">AB-</option>
-                    <option value="O+" selected>O+</option>
-                    <option value="O-">O-</option>
-                  </select>
+                    <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Owner's NIC" required>
                  </div>
               </div>
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <select class="form-control rounded-pill form-control-lg" placeholder="Choose Your Guardian Type" required>
-                    <option value="Parent">Parent</option>
-                    <option value="Guardian">Guardian</option>
-                    <option value="Relation">Relation</option>
-                    <option value="Neighbour">Neighbour</option>  
-                  </select>
-                 </div>
-                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's  Name" required>
-                 </div>
-              </div>
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's Mobile Number" required>
-                 </div>
-                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's Email">
-                 </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Guardian's Address">
-               </div>
-                
-            
+              
                 <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Register</button>
                 
             </form>
