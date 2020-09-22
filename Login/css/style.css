@@ -78,5 +78,13 @@ a, .navbar-light .navbar-brand,.navbar-light .navbar-nav .nav-link, .navbar-ligh
 
 a:hover{
   font-weight: bolder;
-  color: rgb(148, 8, 8);
+  color: red;
+}
+
+hr{
+  width: 100px; 
+  background-color: red;
+}
+.footer-copyright{
+  background-color:rgba(0, 0, 0, 0.267);
 }
