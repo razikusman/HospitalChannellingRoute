@@ -77,7 +77,16 @@ body{
 
 a:hover{
   font-weight: bolder;
-  color: rgb(148, 8, 8);
+  color: rgb(rgb(160, 2, 2));
+}
+
+a{
+  color: white;
+}
+
+hr{
+  background-color: rgb(160, 2, 2);
+  width: 100px;
 }
 
 
