@@ -128,24 +128,32 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: rgb(4, 49, 4);">
     <!-- Brand Logo -->
-    <a href="https://adminlte.io/themes/dev/AdminLTE/index3.html" class="brand-link">
-      <img src="./dashboard/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Admin</span>
-    </a>
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="brand-image" style="text-align: center;">
 
-    <!-- Sidebar -->
-   <!--   <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-     <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="./da/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="https://adminlte.io/themes/dev/AdminLTE/index.html#" class="d-block">Alexander Pierce</a>
-        </div>
+          <img src="./dashboard/red_logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"    id="logo">
+        
       </div>
+        <div class="user-panel mt-3 pb-3 mb-3" style="text-align: center;">
+          <a class="brand-image ">
+            <img src="./dashboard/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8" >
+            <span class="brand-text font-weight-light" id="adlogo">Admin</span>
+          </a>
+        </div>
+    <style>
+      #logo{
+        height: 100px;
+        width: 100px;
+      }
+      #adlogo{
+        font-size: 25px;
+        font-style: italic;
+      }
+      
+    </style>
 
 
       <!-- Sidebar Menu -->
@@ -238,11 +246,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Patient Registration Form</h1>
+            <h1>Schedule Appointments</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="https://adminlte.io/themes/dev/AdminLTE/pages/forms/general.html#">Home</a></li>
+              <li class="breadcrumb-item"><a href="">Home</a></li>
               <li class="breadcrumb-item active">General Form</li>
             </ol>
           </div>
@@ -259,6 +267,13 @@ width: 700px;
 width: 500px;
       }
     </style>
+    <div class="">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="scheduleappointments.html">Make Appointments</a></li>
+        <li class="breadcrumb-item"><a href="scheduleappointmentsview.html"> Sheduled Appointments</a></li>
+      </ol>
+    </div>
+    <div class="row">
     <section id="f1" class="content" style="float: left;">
       <div class="container-fluid">
         <div class="row">
@@ -310,7 +325,7 @@ width: 500px;
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Make Appointment</button>
+                    <button type="submit" class="btn btn-success">Make Appointment</button>
                   </div>             
                  </form>
             </div>
@@ -331,7 +346,7 @@ width: 500px;
                       <!-- form start -->
                       <form role="form">
                         <div class="card-body">
-                          <h4>View Sceduled Appointments:</h4>
+                          <h4>Doctor Availability:</h4>
                           <div class="form-group">
                             <label for="exampleInputPassword1">Choose Doctor</label>
                             <select name="example1_length" aria-controls="example1" class="custom-select custom-select-sm form-control form-control-sm">
@@ -370,6 +385,7 @@ width: 500px;
                     </div>
                     </div>
                     </section>
+                  </div>
                     </div>
             <!-- /.card -->
 

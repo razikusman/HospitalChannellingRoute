@@ -7,21 +7,13 @@ body{
 }
 
 .login-container{
+  height: 100vh;
   width: 100%;
-}
-
-
-
-.reg-form{
-  margin: auto;
-  width: 80%;
-  padding: 15px;
-  max-width: 100%;
 }
 
 .login-form{
   margin: auto;
-  width: 20%;
+  width: 370px;
   padding: 15px;
   max-width: 100%;
 }
@@ -85,16 +77,66 @@ a, .navbar-light .navbar-brand,.navbar-light .navbar-nav .nav-link, .navbar-ligh
 
 a:hover{
   font-weight: bolder;
-  color: rgb(160, 2, 2);
+  color: rgb(rgb(160, 2, 2));
 }
 
 a{
   color: white;
 }
+
 hr{
   background-color: rgb(160, 2, 2);
   width: 100px;
 }
+
 .footer-copyright{
   background-color:rgba(0, 0, 0, 0.267);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    height: 100%;
+    background: #eee;
+    color:#666;
+}
+.navbar-toggler{
+    color: #000;
+}
+.color{
+    background-color: rgb(4, 49, 4); 
+    color: white;
+}
+
+.img{
+    height: 3%;
+    width: 3%;
+}
+
+.navbar-light{
+    font-weight: bolder;
+    color: white;
+}
+
+.navbar-light .navbar-brand,.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link{
+    font-weight: bolder;
+    color: white;
+  }
+  
+  a:hover{
+    font-weight: bolder;
+    color: rgb(148, 8, 8);
+  } */

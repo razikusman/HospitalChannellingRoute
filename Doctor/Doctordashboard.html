@@ -8,13 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="./regpatient/all.min.css">
+  <link rel="stylesheet" href="./dashboard/all.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="./regpatient/ionicons.min.css">
+  <link rel="stylesheet" href="./dashboard/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="./regpatient/adminlte.min.css">
+  <link rel="stylesheet" href="./dashboard/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
-  <link href="./regpatient/css" rel="stylesheet">
+  <link href="./dashboard/css" rel="stylesheet">
 </head>
 <body class="sidebar-mini" style="height: auto;">
 <div class="wrapper">
@@ -55,15 +55,15 @@
     <!-- Brand Logo -->
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
-      <div class="brand-image" style="text-align: center;">
+      <div class="brand-image" style="text-align: center;"> <br>
 
-          <img src="./dashboard/red_logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"    id="logo">
+          <img src="./dashboard//doctorprofile.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"    id="logo">
         
       </div>
         <div class="user-panel mt-3 pb-3 mb-3" style="text-align: center;">
           <a class="brand-image ">
-            <img src="./dashboard/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8" >
-            <span class="brand-text font-weight-light" id="adlogo">Admin</span>
+            <!--<img src="./dashboard/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8" >-->
+            <span class="brand-text font-weight-light" id="adlogo">Doctor</span>
           </a>
         </div>
     <style>
@@ -84,78 +84,44 @@
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
         <li class="nav-item">
-          <a href="dashboard.html" class="nav-link">
+          <a href="Doctordashboard.html" class="nav-link">
             <i class="far fa-circle nav-icon"></i>
-            <p>Dashboard</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="registerpatient.html" class="nav-link">
-            <i class="nav-icon fas fa-th"></i>
-            <p>
-              Register Patient
-            </p>
+            <p>Details</p>
           </a>
         </li>
         <li class="nav-item has-treeview">
-          <a href="viewpatient.html" class="nav-link">
+          <a href="Docpatients.html" class="nav-link">
             <i class="nav-icon fas fa-copy"></i>
             <p>
-              View Patient Details
+              Patients
             </p>
           </a>
         </li>
         <li class="nav-item has-treeview">
-          <a href="scheduleappointments.html" class="nav-link">
-            <i class="nav-icon fas fa-chart-pie"></i>
-            <p>
-              Schedule Appointments
-            </p>
-          </a>
-        </li>
+            <a href="viewappointmentdoc.html" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Vaccines
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="viewappointmentdoc.html" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Patients
+              </p>
+            </a>
+          </li>
+        
         <li class="nav-item has-treeview">
-          <a href="registerdoctor.html" class="nav-link">
-            <i class="nav-icon fas fa-tree"></i>
-            <p>
-              Register Doctor
-            </p>
-          </a>
-        </li>
-        <li class="nav-item has-treeview">
-          <a href="doctorprofile.html" class="nav-link">
-            <i class="nav-icon fas fa-edit"></i>
-            <p>
-              View Doctor Profile
-            </p>
-          </a>
-        </li>
-        <li class="nav-item has-treeview">
-          <a href="patientaddmi.html" class="nav-link">
-            <i class="nav-icon fas fa-table"></i>
-            <p>
-              Patient Admission
-            </p>
-          </a>
-        </li>
-        <li class="nav-item has-treeview">
-          <a href="reports.html" class="nav-link">
+          <a href="reportsdoc.html" class="nav-link">
             <i class="nav-icon fas fa-table"></i>
             <p>
               Reports
             </p>
           </a>
-        </li>
-     
-        <li class="nav-header">EXAMPLES</li>
-        <li class="nav-item">
-          <a href="https://adminlte.io/themes/dev/AdminLTE/pages/calendar.html" class="nav-link">
-            <i class="nav-icon far fa-calendar-alt"></i>
-            <p>
-              Calendar
-            </p>
-          </a>
-        </li>
-      </li>
+        </li>>
       </ul>
       
       </aside>    
@@ -168,7 +134,6 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Doctor Registration Form</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -194,88 +159,59 @@
               <!-- form start -->
               <form role="form">
                 <div class="card-body">
-                  <h4>Doctor Informtion:</h4>
+                  <h4>Your Informtion:</h4>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Doctor Registration No :</label>
                   </div>
                     <div class="row">
                         <div class="form-group name1 col-md-4">
-                            <label for="exampleInputEmail1" class="formText">First Name</label>
-                            <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="First Name">
+                            <label for="exampleInputEmail1" class="formText">First Name:</label>
                         </div>
                 
                         <div class="form-group name2 col-md-4">
-                            <label for="exampleInputPassword1">Last Name</label>
-                             <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                            <label for="exampleInputPassword1">Last Name:</label>
                         </div>
                         <div class="form-group name3 col-md-4">
-                            <label for="exampleInputPassword1">Gender</label><br>
-                             <input type="radio" id="male" name="gender" value="male">
-                             <label for="male">Male</label>
-                             <input type="radio" id="female" name="gender" value="female">
-                             <label for="female">Female</label><br>
+                            <label for="exampleInputPassword1">Gender:</label><br>
+                             
                         </div>
                     </div>
                     <div class="row">
-                  <div class="form-group name2 col-md-6">
-                    <label for="exampleInputPassword1">Address</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
+                  <div class="form-group name2 col-md-4">
+                    <label for="exampleInputPassword1">Address:</label>
                   </div>
-                  <div class="form-group name2 col-md-3">
-                    <label for="exampleInputPassword1">City</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="City">
+                  <div class="form-group name2 col-md-4">
+                    <label for="exampleInputPassword1">City:</label>
                   </div>
-                  <div class="form-group name2 col-md-3">
-                    <label for="exampleInputPassword1">District</label><br>
-                    <select name="cars" id="cars" form="carform">
-                     <option value="volvo">Colombo</option>
-                     <option value="saab">Kelaniya</option>
-                     <option value="opel">Panadura</option>
-                    </select>
+                  <div class="form-group name2 col-md-4">
+                    <label for="exampleInputPassword1">District:</label><br>
                   </div>
                   </div>
                   <div class="row">
                   <div class="form-group name1 col-md-4">
-                    <label for="exampleInputPassword1">NIC</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="NIC">
+                    <label for="exampleInputPassword1">NIC:</label>
                   </div>
                   <div class="form-group name1 col-md-4">
-                    <label for="exampleInputPassword1">Date Of Birth</label>
-                    <input type="date" class="form-control" id="exampleInputPassword1" placeholder="City">
+                    <label for="exampleInputPassword1">Date Of Birth:</label>
                   </div>
                   <div class="form-group name1 col-md-4">
-                    <label for="exampleInputPassword1">Marital Status</label><br>
-                    <select name="cars" id="cars" form="carform">
-                      <option value="volvo">Single</option>
-                      <option value="saab"></option>
-                      <option value="opel"></option>
-                     </select>
+                    <label for="exampleInputPassword1">Marital Status:</label><br>
                   </div>
                   </div>
                   <div class="row">
                   <div class="form-group name1 col-md-4">
-                    <label for="exampleInputPassword1">Contact Number</label>
-                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Contact Number">
+                    <label for="exampleInputPassword1">Contact Number:</label>
                   </div>
                   <div class="form-group name1 col-md-4">
-                    <label for="exampleInputPassword1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                    <label for="exampleInputPassword1">Email:</label>
                   </div>
                   <div class="form-group name1 col-md-4">
-                    <label for="exampleInputPassword1">Doctor Type</label>
-                    <select name="example1_length" aria-controls="example1" class="custom-select custom-select-sm form-control form-control-sm">
-                        <option value="10">xxx</option>
-                        <option value="25">eee</option>
-                        <option value="50">www</option>
-                        <option value="100">ttt</option>
-                    </select>
+                    <label for="exampleInputPassword1">Doctor Type:</label>
                   </div>
+                  <a class="col-md-4" href="">Edit</a>
                  </div>
-                 <div class="form-group name1 col-md-6">
-                    <label for="exampleInputEmail1" class="formText">Srilanka Medical Countcil Registratione Number</label>
-                    <input type="text" class="form-control" id="slmcno" aria-describedby="emailHelp" placeholder="Srilanka Medical Countcil Registratione Number">
                 </div>
-                </div>
+                
                 <!-- /.card-body --> 
               </form>
             </div>
@@ -300,24 +236,22 @@
                            
                               <div class="row">
                                   <div class="form-group name1 col-md-6">
-                                      <label for="exampleInputEmail1" class="formText">Degree</label>
-                                      <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Degree">
+                                      <label for="exampleInputEmail1" class="formText">Degree:</label>
                                   </div>
                           
                                   <div class="form-group name2 col-md-6">
-                                      <label for="exampleInputPassword1">Year Of Graduation</label>
-                                       <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Year Of Graduation">
+                                      <label for="exampleInputPassword1">Year Of Graduation:</label>
                                   </div>
                               </div>
                               <div class="row">
                             <div class="form-group name2 col-md-6">
-                              <label for="exampleInputPassword1">University</label>
-                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="University">
+                              <label for="exampleInputPassword1">University:</label>
                             </div>
                             <div class="form-group name2 col-md-6">
-                              <label for="exampleInputPassword1">Country</label>
-                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Country">
+                              <label for="exampleInputPassword1">Country:</label>
                             </div>
+                            <a class="col-md-4" href="">Edit</a>
+
                             </div>
                             
                         </form>
@@ -332,15 +266,15 @@
            
 
 <!-- jQuery -->
-<script src="./regpatient/jquery.min.js.download"></script>
+<script src="./dashboard/jquery.min.js.download"></script>
 <!-- Bootstrap 4 -->
-<script src="./regpatient/bootstrap.bundle.min.js.download"></script>
+<script src="./dashboard/bootstrap.bundle.min.js.download"></script>
 <!-- bs-custom-file-input -->
-<script src="./regpatient/bs-custom-file-input.min.js.download"></script>
+<script src="./dashboard/bs-custom-file-input.min.js.download"></script>
 <!-- AdminLTE App -->
-<script src="./regpatient/adminlte.min.js.download"></script>
+<script src="./dashboard/adminlte.min.js.download"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="./regpatient/demo.js.download"></script>
+<script src="./dashboard/demo.js.download"></script>
 <script type="text/javascript">
 $(document).ready(function () {
   bsCustomFileInput.init();
